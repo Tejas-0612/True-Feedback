@@ -1,3 +1,4 @@
+"use client";
 import * as z from "zod";
 import axios, { AxiosError } from "axios";
 import { useForm } from "react-hook-form";
