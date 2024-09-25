@@ -23,7 +23,8 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Loader2 } from "lucide-react";
 import Link from "next/link";
-const signUpForm = () => {
+
+const SignUpForm = () => {
   const [username, setUsername] = useState("");
   const [usernameMessage, setUsernameMessage] = useState("");
   const [isCheckingUsername, setIsCheckingUsername] = useState(false);
@@ -195,4 +196,4 @@ const signUpForm = () => {
   );
 };
 
-export default signUpForm;
+export default SignUpForm;

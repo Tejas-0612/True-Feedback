@@ -18,7 +18,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/components/ui/use-toast";
 
-const verifyAccount = () => {
+const VerifyAccount = () => {
   const router = useRouter();
   const params = useParams();
   const { toast } = useToast();
@@ -82,4 +82,4 @@ const verifyAccount = () => {
   );
 };
 
-export default verifyAccount;
+export default VerifyAccount;
