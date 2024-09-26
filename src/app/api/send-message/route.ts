@@ -30,8 +30,8 @@ export async function POST(request: Request) {
     await user.save();
 
     return Response.json(
-      { message: "Message sent successfully", success: false },
-      { status: 500 }
+      { message: "Message sent successfully", success: true },
+      { status: 200 }
     );
   } catch (error) {
     console.error("Error adding message:", error);
