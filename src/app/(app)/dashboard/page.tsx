@@ -139,20 +139,22 @@ const UserDashboard = () => {
             type="text"
             value={profileUrl}
             disabled
-            className="input input-bordered w-full p-2 mr-2"
+            className="input input-bordered w-full p-2 mr-2 border rounded-lg"
           />
           <Button onClick={copyToClipboard}>Copy</Button>
         </div>
       </div>
 
-      <div className="mb-4">
+      <div className="mb-4 ">
         <Switch
           {...register("acceptMessages")}
           checked={acceptMessages}
           onCheckedChange={handleSwitchChange}
           disabled={isSwitchLoading}
         />
-        <span>Accept Messages:{acceptMessages ? "on" : "off"}</span>
+        <span className="ml-2">
+          Accept Messages: {acceptMessages ? "on" : "off"}
+        </span>
       </div>
       <Separator />
 
