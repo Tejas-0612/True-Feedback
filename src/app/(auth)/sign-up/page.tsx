@@ -76,7 +76,7 @@ const SignUpForm = () => {
         description: response.data.message,
       });
 
-      router.replace(`verfiy/${username}`);
+      router.replace(`verify/${username}`);
 
       setIsSubmitting(false);
     } catch (error) {
